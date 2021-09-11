@@ -322,15 +322,21 @@ body {
 }
 
 .main-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 0 30px 30px;
   flex-grow: 1;
-  overflow: auto;
   background-color: #fff;
   margin-left: 20px;
-  margin-top: 30px;
+  margin-top: 60px;
   box-shadow: 0px 0px 10px #e6e6e6;
+}
+.main-container::-webkit-scrollbar {
+  width: 6px;
+}
+.main-container::-webkit-scrollbar-thumb {
+  background-color: rgba(21, 20, 26, 0.63);
 }
 
 .anim {
@@ -375,6 +381,13 @@ body {
   color: #808191;
   margin-bottom: 30px;
 }
+.main-blog ::-webkit-scrollbar {
+  width: 6px;
+}
+.main-blog ::-webkit-scrollbar-thumb {
+  background-color: rgba(21, 20, 26, 0.63);
+}
+
 .author-img {
   width: 52px;
   height: 52px;
@@ -937,14 +950,6 @@ button.vjs-play-control.vjs-control.vjs-button {
     max-height: 100%;
   }
 }
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(21, 20, 26, 0.63);
-}
-
 .main-blog .formfield {
   position: relative;
   box-sizing: border-box;
@@ -1001,7 +1006,12 @@ button.vjs-play-control.vjs-control.vjs-button {
   padding: 0;
   list-style: none;
   position: relative;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
+  margin-top: -26px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
 }
 .tabs .active-tab {
   border-top: 1px solid #ccc;
@@ -1010,6 +1020,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   border-bottom: none;
   position: relative;
   color: #5b8cff;
+  background-color: #fff;
 }
 .tabs .active-tab:after {
   width: 100%;
@@ -1021,10 +1032,14 @@ button.vjs-play-control.vjs-control.vjs-button {
   background: white;
 }
 .tabs li {
+  background-color: transparent;
   display: inline-block;
   cursor: pointer;
   color: #3a5ea7;
   padding: 5px 10px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .tabs li:first-child {
   margin-left: 10px;
@@ -1037,4 +1052,11 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
 .tabs-content li {
   display: none;
+}
+.tabs-content h6 {
+  color: #5b8cff;
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 1px solid #5b8cff;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
