@@ -86,7 +86,6 @@ body {
 
 .sidebar {
   width: 290px;
-  height: 100vh;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -132,6 +131,7 @@ body {
   color: #5b8cff;
   background-color: #e6eeff;
   font-weight: 500;
+  opacity: 1;
 }
 .sidebar-link.is-active svg {
   background-color: transparent;
