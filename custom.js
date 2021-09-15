@@ -73,3 +73,32 @@ $(function () {
       $contentlis.hide().eq(index).show();
        });
   });
+
+$('.hamburger').click(function (e) { 
+    e.preventDefault();
+    $('.sidebar').toggleClass('add-translate');
+    $('.hamburger-close').removeClass('hide').addClass('show');
+    $('.hamburger').removeClass('show').addClass('hide');
+
+    
+    $('.main-container').toggleClass('add-padding');
+
+});
+$('.hamburger-close').click(function (e) { 
+    e.preventDefault();
+    $('.sidebar').toggleClass('add-translate');
+   
+    $('.hamburger-close').removeClass('show').addClass('hide');
+    $('.hamburger').removeClass('hide').addClass('show');
+
+    
+    $('.main-container').toggleClass('add-padding');
+
+});
+
+
+$('.inner-links').slideUp();
+$('.discover').click(function (e) { 
+    e.preventDefault();
+    $('.inner-links').slideDown();
+});

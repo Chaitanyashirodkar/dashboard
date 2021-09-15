@@ -95,7 +95,6 @@ body {
     overflow-x: hidden;
     background-color: #fff;
     .logo {
-
         display: none;
         width: 30px;
         width: 300px;
@@ -259,7 +258,12 @@ body {
     flex-shrink: 0;
     padding: 20px;
 }
-
+.hamburger {
+    padding-left: 100px;
+    filter: invert(1);
+    margin-right: 50px;
+    cursor: pointer;
+}
 .search-bar {
     height: 34px;
     display: flex;
@@ -935,7 +939,23 @@ button.vjs-play-control.vjs-control.vjs-button {
         background-size: cover;
     }
 }
+.main-blog {
+    border-radius: 5px;
+}
+.inner-links{
+    background-color: #0a3371;
+    padding: 5px 0;
+    li{
+        list-style-type: none;
+        padding: 5px;
+        padding-left: 30px;
+        a{
+            color: #fff;
+            font-size: 10px;
+        }
+    }
 
+}
 @media screen and (max-width: 475px) {
     .main-blog__title {
     }
@@ -979,7 +999,7 @@ button.vjs-play-control.vjs-control.vjs-button {
     padding: 30px;
     margin: 30px;
     margin-top: 0;
-    height: 300vh;
+    height: 600vh;
     .formfield {
         position: relative;
         box-sizing: border-box;
@@ -1004,17 +1024,33 @@ button.vjs-play-control.vjs-control.vjs-button {
         width: 100%;
     }
     .formfield > input {
-        border: 0;
-        border-bottom: 1px solid #b0b0b0;
-        outline: none;
-        font-size: 16px;
+        display: block;
+        width: 100%;
+        height: calc(1.90625rem + 2px);
+        padding: 0.25rem 0.7rem;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.2rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        margin-bottom: 20px;
+        height: 40px;
     }
     .formfield > label {
-        position: absolute;
-        top: 0;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // left: 0;
+        // color: rgb(108, 108, 108);
+        top: 9px;
         bottom: 0;
         left: 0;
-        color: rgb(108, 108, 108);
+        color: #6c6c6c;
+        position: relative;
     }
     input:focus + label,
     input:valid + label {
@@ -1168,4 +1204,26 @@ button.vjs-play-control.vjs-control.vjs-button {
 .list-group-item + .list-group-item.active {
     margin-top: -1px;
     border-top-width: 1px;
+}
+.add-translate {
+    margin-left: -290px;
+
+    opacity: 0;
+}
+.add-padding {
+    padding-left: 60px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: inline-block;
+}
+.hamburger-close {
+    padding-left: 100px;
+    filter: invert(1);
+    margin-right: 50px;
+    cursor: pointer;
+}
+input {
 }
