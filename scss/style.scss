@@ -159,7 +159,6 @@ body {
         }
     }
     &.collapse {
-        width: 90px;
         border-right: 1px solid var(--border-color);
         .logo-expand,
         .side-title {
@@ -169,7 +168,6 @@ body {
             display: flex;
         }
         .side-wrapper {
-            width: 30px;
         }
         .side-menu svg {
             margin-right: 30px;
@@ -342,6 +340,11 @@ body {
 .main-container {
     position: relative;
     display: flex;
+    @media screen and (max-width: 992px) {
+        flex-direction:column;
+    }
+    
+    
     padding: 0 30px 30px;
     flex-grow: 1;
     margin-left: 0;
@@ -942,19 +945,18 @@ button.vjs-play-control.vjs-control.vjs-button {
 .main-blog {
     border-radius: 5px;
 }
-.inner-links{
+.inner-links {
     background-color: #0a3371;
     padding: 5px 0;
-    li{
+    li {
         list-style-type: none;
         padding: 5px;
         padding-left: 30px;
-        a{
+        a {
             color: #fff;
             font-size: 10px;
         }
     }
-
 }
 @media screen and (max-width: 475px) {
     .main-blog__title {
@@ -978,7 +980,6 @@ button.vjs-play-control.vjs-control.vjs-button {
         padding: 10px;
     }
     .sidebar.collapse {
-        width: 40px;
     }
     .sidebar {
         align-items: center;
@@ -997,7 +998,11 @@ button.vjs-play-control.vjs-control.vjs-button {
 .main-blog {
     background: #fff;
     padding: 30px;
+   @media screen and (min-width: 992px) {
     margin: 30px;
+   }
+   
+   
     margin-top: 0;
     height: 600vh;
     .formfield {
@@ -1138,11 +1143,23 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 .list-group {
     display: flex;
-    flex-direction: column;
+    @media screen and (min-width: 992px) {
+        flex-direction: column;
+    }
+    
+@media screen and (max-width: 992px) {
+
+}
+
+
     padding-left: 0;
     margin-bottom: 0;
     width: 100%;
-    max-width: 170px;
+    @media screen and (min-width: 992px) {
+        max-width: 170px;
+    }
+    
+    
     position: relative;
     z-index: 2;
     height: max-content;
@@ -1211,7 +1228,11 @@ button.vjs-play-control.vjs-control.vjs-button {
     opacity: 0;
 }
 .add-padding {
-    padding-left: 60px;
+    @media screen and (min-width: 992px) {
+        padding-left: 60px;
+    }
+    
+    
 }
 .hide {
     display: none;
@@ -1226,4 +1247,9 @@ button.vjs-play-control.vjs-control.vjs-button {
     cursor: pointer;
 }
 input {
+}
+.mhide {
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
 }

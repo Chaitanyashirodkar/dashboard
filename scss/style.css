@@ -152,7 +152,6 @@ body {
   color: #5b8cff;
 }
 .sidebar.collapse {
-  width: 90px;
   border-right: 1px solid var(--border-color);
 }
 .sidebar.collapse .logo-expand,
@@ -161,9 +160,6 @@ body {
 }
 .sidebar.collapse .logo {
   display: flex;
-}
-.sidebar.collapse .side-wrapper {
-  width: 30px;
 }
 .sidebar.collapse .side-menu svg {
   margin-right: 30px;
@@ -356,6 +352,11 @@ body {
   z-index: 2;
   height: 80vh;
   overflow: scroll;
+}
+@media screen and (max-width: 992px) {
+  .main-container {
+    flex-direction: column;
+  }
 }
 .main-container::-webkit-scrollbar {
   width: 6px;
@@ -972,10 +973,6 @@ button.vjs-play-control.vjs-control.vjs-button {
     padding: 10px;
   }
 
-  .sidebar.collapse {
-    width: 40px;
-  }
-
   .sidebar {
     align-items: center;
     box-shadow: 0px 0px 10px #e6e6e6;
@@ -992,9 +989,13 @@ button.vjs-play-control.vjs-control.vjs-button {
 .main-blog {
   background: #fff;
   padding: 30px;
-  margin: 30px;
   margin-top: 0;
   height: 600vh;
+}
+@media screen and (min-width: 992px) {
+  .main-blog {
+    margin: 30px;
+  }
 }
 .main-blog .formfield {
   position: relative;
@@ -1123,11 +1124,9 @@ button.vjs-play-control.vjs-control.vjs-button {
 
 .list-group {
   display: flex;
-  flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   width: 100%;
-  max-width: 170px;
   position: relative;
   z-index: 2;
   height: -webkit-max-content;
@@ -1135,6 +1134,16 @@ button.vjs-play-control.vjs-control.vjs-button {
   height: max-content;
   position: sticky;
   top: 0;
+}
+@media screen and (min-width: 992px) {
+  .list-group {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 992px) {
+  .list-group {
+    max-width: 170px;
+  }
 }
 
 .list-group-item-action {
@@ -1206,8 +1215,10 @@ button.vjs-play-control.vjs-control.vjs-button {
   opacity: 0;
 }
 
-.add-padding {
-  padding-left: 60px;
+@media screen and (min-width: 992px) {
+  .add-padding {
+    padding-left: 60px;
+  }
 }
 
 .hide {
@@ -1223,4 +1234,10 @@ button.vjs-play-control.vjs-control.vjs-button {
   filter: invert(1);
   margin-right: 50px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .mhide {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
