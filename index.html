@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://kit.fontawesome.com/b73881b7c2.js" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="glass-effect">
-        <div class="container">
+        <div class="container p-0">
             <div class="header">
 
                 <a class="logo-expand" href="#"><img src="Adani_logo.png" alt="" class="brand-logo"></a>
@@ -24,21 +28,13 @@
                     <input type="text" placeholder="Search" class="search">
                 </div>
                 <div class="user-settings mhide">
-                    <img class="user-img" src="https://images.unsplash.com/photo-1587918842454-870dbd18261a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=943&q=80" alt="">
-                    <div class="user-name">Thomas</div>
-                    <!-- <svg viewBox="0 0 492 492" fill="currentColor"> -->
-                    <path d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z"></path>
-                    </svg>
-                  
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" class="svg-inline--fa fa-bell fa-w-14 align-middle" style="font-size: 2em;
-                    color: rgba(255, 255, 255, 0.75);
-                    font-weight: 500;
-                    width: 25px;
-                    margin-left: 50px;" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path></svg>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open" class="svg-inline--fa fa-envelope-open fa-w-16 align-middle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 464c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V200.724a48 48 0 0 1 18.387-37.776c24.913-19.529 45.501-35.365 164.2-121.511C199.412 29.17 232.797-.347 256 .003c23.198-.354 56.596 29.172 73.413 41.433 118.687 86.137 139.303 101.995 164.2 121.512A48 48 0 0 1 512 200.724V464zm-65.666-196.605c-2.563-3.728-7.7-4.595-11.339-1.907-22.845 16.873-55.462 40.705-105.582 77.079-16.825 12.266-50.21 41.781-73.413 41.43-23.211.344-56.559-29.143-73.413-41.43-50.114-36.37-82.734-60.204-105.582-77.079-3.639-2.688-8.776-1.821-11.339 1.907l-9.072 13.196a7.998 7.998 0 0 0 1.839 10.967c22.887 16.899 55.454 40.69 105.303 76.868 20.274 14.781 56.524 47.813 92.264 47.573 35.724.242 71.961-32.771 92.263-47.573 49.85-36.179 82.418-59.97 105.303-76.868a7.998 7.998 0 0 0 1.839-10.967l-9.071-13.196z"></path></svg>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" class="svg-inline--fa fa-bell fa-w-14 align-middle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path></svg>
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog" class="svg-inline--fa fa-cog fa-w-16 align-middle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"></path></svg>
                 </div>
             </div>
             <div class="flex-outer">
-                <div class="sidebar">
+                <div class="sidebar px-0">
                     <div class="side-wrapper">
                         <div class="side-title">NAVIGATION MENU</div>
                         <div class="side-menu">
@@ -111,211 +107,293 @@
                             <a href="#" class="list-group-item-action list-group-item">Delete account </a>
                         </ul>
                         <div class="main-blogs">
-                            <div class="main-blog ">
+                            <div class="main-blog mt-0">
                                 <div class="container">
-                                    <h6 class="mt-2 mb-4" id="1">Vessel details</h6>
-                                    <div class="row d-flex">
-                                        <div class="col-md-12">
+
+                                    <div class="row d-flex section-partion">
+                                        <div class="col-md-4">
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname" id="firstname" required>
                                                 <label alt="Prénom" for="firstname" placeholder="Prénom">Request Nbr</label>
+                                                <input type="text" name="firstname" id="firstname" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname1" id="firstname1" required>
                                                 <label alt="Prénom" for="firstname1" placeholder="Prénom">VCN Nbr</label>
+                                                <input type="text" name="firstname1" id="firstname1" required>
+                                                
                                             </div>
 
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname2" id="firstname2" required>
                                                 <label alt="Prénom" for="firstname2" placeholder="Prénom">Terninal</label>
+                                                <input type="text" name="firstname2" id="firstname2" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname3" id="firstname3" required>
                                                 <label alt="Prénom" for="firstname3" placeholder="Prénom">Vessel Name</label>
+                                                <input type="text" name="firstname3" id="firstname3" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="CallSign" id="CallSign" required>
                                                 <label alt="Prénom" for="CallSign" placeholder="Prénom">Call Sign</label>
+                                                <input type="text" name="CallSign" id="CallSign" required>
+                                                
                                             </div>
+                                            
+                                        </div>
+                                        <div class="col-md-4 px-1">
+                                            
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="IMO" id="IMO" required>
                                                 <label alt="Prénom" for="IMO" placeholder="Prénom">IMO</label>
+                                                <input type="text" name="IMO" id="IMO" required>
+                                                
                                             </div>
 
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="GRT" id="GRT" required>
                                                 <label alt="Prénom" for="GRT" placeholder="Prénom">GRT</label>
+                                                <input type="text" name="GRT" id="GRT" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="View" id="View" required>
                                                 <label alt="Prénom" for="View" placeholder="Prénom">View</label>
+                                                <input type="text" name="View" id="View" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Loading" id="Loading" required>
                                                 <label alt="Prénom" for="Loading" placeholder="Prénom">Loading Voy</label>
+                                                <input type="text" name="Loading" id="Loading" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Disch" id="Disch" required>
                                                 <label alt="Prénom" for="Disch" placeholder="Prénom">Disch Voy</label>
+                                                <input type="text" name="Disch" id="Disch" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Vessel Category" id="Vessel Category" required>
                                                 <label alt="Prénom" for="Vessel Category" placeholder="Prénom">Vessel Category</label>
+                                                <input type="text" name="Vessel Category" id="Vessel Category" required>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            
+                                            <div class="formfield" id="firstnamefield">
+                                                <label alt="Prénom" for="IMO" placeholder="Prénom">IMO</label>
+                                                <input type="text" name="IMO" id="IMO" required>
+                                                
+                                            </div>
+
+                                            <div class="formfield" id="firstnamefield">
+                                                <label alt="Prénom" for="GRT" placeholder="Prénom">GRT</label>
+                                                <input type="text" name="GRT" id="GRT" required>
+                                                
+                                            </div>
+                                            <div class="formfield" id="firstnamefield">
+                                                <label alt="Prénom" for="View" placeholder="Prénom">View</label>
+                                                <input type="text" name="View" id="View" required>
+                                                
+                                            </div>
+                                            <div class="formfield" id="firstnamefield">
+                                                <label alt="Prénom" for="Loading" placeholder="Prénom">Loading Voy</label>
+                                                <input type="text" name="Loading" id="Loading" required>
+                                                
+                                            </div>
+                                            <div class="formfield" id="firstnamefield">
+                                                <label alt="Prénom" for="Disch" placeholder="Prénom">Disch Voy</label>
+                                                <input type="text" name="Disch" id="Disch" required>
+                                                
+                                            </div>
+                                            <div class="formfield" id="firstnamefield">
+                                                <label alt="Prénom" for="Vessel Category" placeholder="Prénom">Vessel Category</label>
+                                                <input type="text" name="Vessel Category" id="Vessel Category" required>
+                                                
                                             </div>
                                         </div>
                                     </div>
 
-                                    <h1 style="font-size: 28px;margin: 30px 0;" id="2"> Test Section</h1>
-                                    <div class="row d-flex">
+                                    <h1 style="font-size: 18px;margin: 30px 0;" class="card-title"  id="2"> Test Section</h1>
+                                    <div class="row d-flex section-partion">
                                         <div class="col-md-12">
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname" id="firstname" required>
                                                 <label alt="Prénom" for="firstname" placeholder="Prénom">Request Nbr</label>
+                                                <input type="text" name="firstname" id="firstname" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname1" id="firstname1" required>
                                                 <label alt="Prénom" for="firstname1" placeholder="Prénom">VCN Nbr</label>
+                                                <input type="text" name="firstname1" id="firstname1" required>
+                                                
                                             </div>
 
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname2" id="firstname2" required>
                                                 <label alt="Prénom" for="firstname2" placeholder="Prénom">Terninal</label>
+                                                <input type="text" name="firstname2" id="firstname2" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname3" id="firstname3" required>
                                                 <label alt="Prénom" for="firstname3" placeholder="Prénom">Vessel Name</label>
+                                                <input type="text" name="firstname3" id="firstname3" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="CallSign" id="CallSign" required>
                                                 <label alt="Prénom" for="CallSign" placeholder="Prénom">Call Sign</label>
+                                                <input type="text" name="CallSign" id="CallSign" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="IMO" id="IMO" required>
                                                 <label alt="Prénom" for="IMO" placeholder="Prénom">IMO</label>
+                                                <input type="text" name="IMO" id="IMO" required>
+                                                
                                             </div>
 
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="GRT" id="GRT" required>
                                                 <label alt="Prénom" for="GRT" placeholder="Prénom">GRT</label>
+                                                <input type="text" name="GRT" id="GRT" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="View" id="View" required>
                                                 <label alt="Prénom" for="View" placeholder="Prénom">View</label>
+                                                <input type="text" name="View" id="View" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Loading" id="Loading" required>
                                                 <label alt="Prénom" for="Loading" placeholder="Prénom">Loading Voy</label>
+                                                <input type="text" name="Loading" id="Loading" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Disch" id="Disch" required>
                                                 <label alt="Prénom" for="Disch" placeholder="Prénom">Disch Voy</label>
+                                                <input type="text" name="Disch" id="Disch" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Vessel Category" id="Vessel Category" required>
                                                 <label alt="Prénom" for="Vessel Category" placeholder="Prénom">Vessel Category</label>
+                                                <input type="text" name="Vessel Category" id="Vessel Category" required>
+                                                
                                             </div>
                                         </div>
                                     </div>
 
-                                    <h1 style="font-size: 28px;margin: 30px 0;" id="3"> Test Section</h1>
-                                    <div class="row d-flex">
+                                    <h1 style="font-size: 18px;margin: 30px 0;"  class="card-title" id="3"> Test Section</h1>
+                                    <div class="row d-flex section-partion">
                                         <div class="col-md-12">
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname" id="firstname" required>
                                                 <label alt="Prénom" for="firstname" placeholder="Prénom">Request Nbr</label>
+                                                <input type="text" name="firstname" id="firstname" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname1" id="firstname1" required>
                                                 <label alt="Prénom" for="firstname1" placeholder="Prénom">VCN Nbr</label>
+                                                <input type="text" name="firstname1" id="firstname1" required>
+                                                
                                             </div>
 
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname2" id="firstname2" required>
                                                 <label alt="Prénom" for="firstname2" placeholder="Prénom">Terninal</label>
+                                                <input type="text" name="firstname2" id="firstname2" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname3" id="firstname3" required>
                                                 <label alt="Prénom" for="firstname3" placeholder="Prénom">Vessel Name</label>
+                                                <input type="text" name="firstname3" id="firstname3" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="CallSign" id="CallSign" required>
                                                 <label alt="Prénom" for="CallSign" placeholder="Prénom">Call Sign</label>
+                                                <input type="text" name="CallSign" id="CallSign" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="IMO" id="IMO" required>
                                                 <label alt="Prénom" for="IMO" placeholder="Prénom">IMO</label>
+                                                <input type="text" name="IMO" id="IMO" required>
+                                                
                                             </div>
 
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="GRT" id="GRT" required>
                                                 <label alt="Prénom" for="GRT" placeholder="Prénom">GRT</label>
+                                                <input type="text" name="GRT" id="GRT" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="View" id="View" required>
                                                 <label alt="Prénom" for="View" placeholder="Prénom">View</label>
+                                                <input type="text" name="View" id="View" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Loading" id="Loading" required>
                                                 <label alt="Prénom" for="Loading" placeholder="Prénom">Loading Voy</label>
+                                                <input type="text" name="Loading" id="Loading" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Disch" id="Disch" required>
                                                 <label alt="Prénom" for="Disch" placeholder="Prénom">Disch Voy</label>
+                                                <input type="text" name="Disch" id="Disch" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Vessel Category" id="Vessel Category" required>
                                                 <label alt="Prénom" for="Vessel Category" placeholder="Prénom">Vessel Category</label>
+                                                <input type="text" name="Vessel Category" id="Vessel Category" required>
+                                                
                                             </div>
                                         </div>
                                     </div>
-                                    <h1 style="font-size: 28px;margin: 30px 0;" id="4"> Test Section</h1>
-                                    <div class="row d-flex">
+                                    <h1 style="font-size: 18px;margin: 30px 0;" class="card-title"  id="4"> Test Section</h1>
+                                    <div class="row d-flex section-partion">
                                         <div class="col-md-12">
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname" id="firstname" required>
                                                 <label alt="Prénom" for="firstname" placeholder="Prénom">Request Nbr</label>
+                                                <input type="text" name="firstname" id="firstname" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname1" id="firstname1" required>
                                                 <label alt="Prénom" for="firstname1" placeholder="Prénom">VCN Nbr</label>
+                                                <input type="text" name="firstname1" id="firstname1" required>
+                                                
                                             </div>
 
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname2" id="firstname2" required>
                                                 <label alt="Prénom" for="firstname2" placeholder="Prénom">Terninal</label>
+                                                <input type="text" name="firstname2" id="firstname2" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="firstname3" id="firstname3" required>
                                                 <label alt="Prénom" for="firstname3" placeholder="Prénom">Vessel Name</label>
+                                                <input type="text" name="firstname3" id="firstname3" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="CallSign" id="CallSign" required>
                                                 <label alt="Prénom" for="CallSign" placeholder="Prénom">Call Sign</label>
+                                                <input type="text" name="CallSign" id="CallSign" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="IMO" id="IMO" required>
                                                 <label alt="Prénom" for="IMO" placeholder="Prénom">IMO</label>
+                                                <input type="text" name="IMO" id="IMO" required>
+                                                
                                             </div>
 
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="GRT" id="GRT" required>
                                                 <label alt="Prénom" for="GRT" placeholder="Prénom">GRT</label>
+                                                <input type="text" name="GRT" id="GRT" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="View" id="View" required>
                                                 <label alt="Prénom" for="View" placeholder="Prénom">View</label>
+                                                <input type="text" name="View" id="View" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Loading" id="Loading" required>
                                                 <label alt="Prénom" for="Loading" placeholder="Prénom">Loading Voy</label>
+                                                <input type="text" name="Loading" id="Loading" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Disch" id="Disch" required>
                                                 <label alt="Prénom" for="Disch" placeholder="Prénom">Disch Voy</label>
+                                                <input type="text" name="Disch" id="Disch" required>
+                                                
                                             </div>
                                             <div class="formfield" id="firstnamefield">
-                                                <input type="text" name="Vessel Category" id="Vessel Category" required>
                                                 <label alt="Prénom" for="Vessel Category" placeholder="Prénom">Vessel Category</label>
+                                                <input type="text" name="Vessel Category" id="Vessel Category" required>
+                                                
                                             </div>
                                         </div>
                                     </div>

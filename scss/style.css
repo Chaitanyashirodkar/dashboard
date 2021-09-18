@@ -125,7 +125,8 @@ body {
   z-index: -1;
 }
 .sidebar-link {
-  padding: 8px;
+  padding: 10px;
+  padding-left: 20px;
   color: #fff;
   font-size: 10px;
 }
@@ -211,6 +212,13 @@ body {
 .side-title {
   letter-spacing: 0.07em;
   margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.section-partion {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .side-wrapper {
@@ -220,6 +228,12 @@ body {
 }
 .side-wrapper + .side-wrapper {
   border-bottom: none;
+}
+
+.card-title {
+  color: #b3b3b3;
+  font-size: 0.9375rem;
+  line-height: 1.5;
 }
 
 .dashboard-title {
@@ -293,50 +307,13 @@ body {
   margin-left: auto;
 }
 .user-settings svg {
-  width: 10px;
+  width: 20px;
   flex-shrink: 0;
+  color: #fff;
+  margin-left: 20px;
 }
 @media screen and (max-width: 575px) {
   .user-settings svg {
-    display: none;
-  }
-}
-.user-settings .notify {
-  position: relative;
-}
-.user-settings .notify svg {
-  width: 20px;
-  margin-left: 24px;
-  flex-shrink: 0;
-}
-.user-settings .notify .notification {
-  width: 8px;
-  height: 8px;
-  background-color: #ec5252;
-  position: absolute;
-  right: 1px;
-  border: 1px solid var(--theme-bg);
-  top: -2px;
-}
-@media screen and (max-width: 575px) {
-  .user-settings .notify .notification {
-    display: none;
-  }
-}
-.user-img {
-  width: 30px;
-  height: 30px;
-  flex-shrink: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50px;
-}
-.user-name {
-  color: #808191;
-  margin: 0 6px 0 12px;
-}
-@media screen and (max-width: 575px) {
-  .user-name {
     display: none;
   }
 }
@@ -743,35 +720,6 @@ video {
   margin-left: 30px;
 }
 
-.chat {
-  background-color: #252836;
-  padding: 0 20px;
-  max-height: 414px;
-  overflow: auto;
-}
-.chat input {
-  width: 100%;
-  border: 0;
-  background-color: #2d303e;
-  color: #fff;
-  padding: 12px 40px;
-  font-weight: 500;
-  font-family: var(--body-font);
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 12C2 6.48 6.47 2 12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10C6.47 22 2 17.52 2 12zm5.52 1.2c-.66 0-1.2-.54-1.2-1.2 0-.66.54-1.2 1.2-1.2.66 0 1.19.54 1.19 1.2 0 .66-.53 1.2-1.19 1.2zM10.8 12c0 .66.54 1.2 1.2 1.2.66 0 1.19-.54 1.19-1.2a1.194 1.194 0 10-2.39 0zm4.48 0a1.195 1.195 0 102.39 0 1.194 1.194 0 10-2.39 0z' fill='%236c6e78'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: 8px;
-}
-.chat input::-moz-placeholder {
-  color: #6c6e78;
-}
-.chat input:-ms-input-placeholder {
-  color: #6c6e78;
-}
-.chat input::placeholder {
-  color: #6c6e78;
-}
-
 .message {
   display: flex;
   align-items: center;
@@ -987,7 +935,6 @@ button.vjs-play-control.vjs-control.vjs-button {
   }
 }
 .main-blog {
-  background: #fff;
   padding: 30px;
   margin-top: 0;
   height: 600vh;
@@ -1016,7 +963,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 .main-blog .formfield > input,
 .main-blog .formfield > label {
   padding: 5px;
-  margin: 14px 0;
+  margin: 14px 0 9px;
   width: 100%;
 }
 .main-blog .formfield > input {
@@ -1034,7 +981,7 @@ button.vjs-play-control.vjs-control.vjs-button {
   border-radius: 0.2rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   margin-bottom: 20px;
-  height: 40px;
+  height: 30px;
 }
 .main-blog .formfield > label {
   top: 9px;
