@@ -939,11 +939,6 @@ button.vjs-play-control.vjs-control.vjs-button {
   margin-top: 0;
   height: 600vh;
 }
-@media screen and (min-width: 992px) {
-  .main-blog {
-    margin: 30px;
-  }
-}
 .main-blog .formfield {
   position: relative;
   box-sizing: border-box;
@@ -958,7 +953,6 @@ button.vjs-play-control.vjs-control.vjs-button {
 .main-blog .formfield,
 .main-blog #lastnamefield {
   width: 100%;
-  min-width: 250px;
 }
 .main-blog .formfield > input,
 .main-blog .formfield > label {
@@ -1274,6 +1268,11 @@ select {
   border: 1px solid #ced4da;
   border-radius: 0.2rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   height: 30px;
+  transform: translateY(15px);
+}
+
+#firstname {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

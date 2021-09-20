@@ -953,7 +953,7 @@ button.vjs-play-control.vjs-control.vjs-button {
 .main-blog {
     padding: 30px;
    @media screen and (min-width: 992px) {
-    margin: 30px;
+
    }
    
    
@@ -973,7 +973,6 @@ button.vjs-play-control.vjs-control.vjs-button {
     .formfield,
     #lastnamefield {
         width: 100%;
-        min-width: 250px;
     }
 
     .formfield > input,
@@ -1292,6 +1291,11 @@ select{
     border: 1px solid #ced4da;
     border-radius: 0.2rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     height: 30px;
+    transform: translateY(15px);
+}
+
+#firstname{
+    display: none;
 }
